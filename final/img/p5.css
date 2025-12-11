@@ -1,0 +1,156 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+
+header {
+    background-color: #ffda7b;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #6b3e00;
+}
+
+nav ul {
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #6b3e00;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    text-decoration: underline;
+}
+
+
+.hero {
+    background-image: url("/project/img/sweet-hero.jpg"); /* Replace with your chosen hero image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 300px; /* Adjustable */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: white;
+    padding: 20px;
+
+    /* Adds a dark overlay for readability */
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45); /* Dark overlay */
+}
+
+.hero h2 {
+    position: relative;
+    font-size: 2.5rem;
+    z-index: 2;
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 25px 0;
+    border-bottom: 1px solid #f0e0d0;
+}
+
+section h2 {
+    color: #d97706;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    color: #b45309;
+}
+
+article h4 {
+    color: #8a3b02;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+figure {
+    margin: 10px 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+footer {
+    background-color: #ffda7b;
+    padding: 15px;
+    text-align: center;
+}
+
+footer a {
+    color: #6b3e00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        height: 220px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+}
