@@ -43,36 +43,6 @@ nav ul li a:focus {
 }
 
 
-.hero {
-    background-image: url("/breakfast_icon.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    color: white;
-    padding: 20px;
-    position: relative;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.45); 
-}
-
-.hero h2 {
-    position: relative;
-    font-size: 2.5rem;
-    z-index: 2;
-}
-
 
 main {
     padding: 20px;
@@ -138,17 +108,44 @@ footer a:focus {
     text-decoration: underline;
 }
 
+.sweet-hero {
+    background-image: url("/breakfast_icon.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.sweet-hero::before {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.sweet-hero h2 {
+    position: relative;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
 
 @media (max-width: 600px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .hero {
+    .sweet-hero {
         height: 220px;
     }
-
-    .hero h2 {
-        font-size: 1.8rem;
+    .sweet-hero h2 {
+        font-size: 1.7rem;
     }
 }
